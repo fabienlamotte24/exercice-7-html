@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Exo7</title>
+  </head>
+  <body>
+    <form class="formulaireClient" action="traitement.php" method="post">
+
+      <fieldset class="id">
+        <legend class="id">Votre identité</legend>
+              <ol>
+                <li><label for="Nom">Nom:</label>
+                <input type="texte" name= "Nom" placeholder="Nom" maxlength="15"></li>
+
+                <li><label for="Prenom">Prénom:</label>
+                <input type="texte" name="Prenom" placeholder="Prenom" maxlength="10"></li>
+
+                <li><label for="Mail">Adresse Mail:</label>
+                <input type="email" name="Mail" placeholder="adresse mail" maxlength="20"></li>
+              </ol>
+      </fieldset>
+
+      <fieldset class="adresse">
+          <legend class="adresse">Adresse de livraison</legend>
+                <ol>
+                  <li><label for="Adresse">Adresse:</label>
+                  <textarea name="Adresse" rows="3" cols="30"></textarea>
+
+                  <li><label for="CodePostal">Code Postal:</label>
+                  <input type="texte" name= "CP" placeholder="Code Postal" maxlength="5"></li>
+
+                  <li><label for="Ville">Ville:</label>
+                  <input type="texte" name= "Ville" placeholder="Ville" maxlength="10"></li>
+                </ol>
+      </fieldset>
+      <fieldset class="pay">
+        <legend class="pay">Informations de règlement</legend>
+            <ol>
+              <li><label for="CB">Type de carte bancaire:</label><br />
+              <div class="button">
+              <input type="radio" name="CB" value="VISA" /> <label for="VISA">VISA</label><br />
+              <input type="radio" name="CB" value="Mastercard" /> <label for="Mastercard">Mastercard</label>
+              </div>
+
+              <li><label for="numCarte">Numéro de carte:</label>
+              <input type="text" name= "numCB" placeholder="Numero de carte" maxlength="15"></li>
+
+              <li><label for="Cdsecu">Code de sécurité:</label>
+              <input type="text" name= "Cdsecu" placeholder="Code de sécurité" maxlength="15"></li>
+
+              <li><label for="Titulaire">Nom du titulaire:</label>
+              <input type="text" name= "Titulaire" placeholder="Nom du titulaire" maxlength="15"></li>
+            </ol>
+      </fieldset>
+    </form>
+    <input type="submit" value="J'achète !"
+  </body>
+</html>
